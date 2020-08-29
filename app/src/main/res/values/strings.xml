@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MvvmBoiletPlate</string>
+
+    <!--Fonts-->
+    <string name="Roboto_Regular">Roboto-Regular</string>
+    <string name="Roboto_Light">Roboto-Light</string>
+    <string name="Roboto_Thin">Roboto-Thin</string>
+    <string name="Roboto_Bold">Roboto-Bold</string>
+    <string name="Roboto_Medium">Roboto-Medium</string>
+    <string name="processing">Processing</string>
+    <string name="login">Login</string>>
+
+    <!--Login Validation-->
+    <string name="invalid_email_password">Please provide a valid email and password.</string>
+    <string name="invalid_username">Invalid username.</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="employee_list_toolbar_name">Employees</string>
+    <string name="search_hint">Search by name / email</string>
+    <string name="employees_not_available">Employees not available</string>
+    <string name="employee_detail_toolbar_name">Employee Detail</string>
+    <string name="username_label">Username</string>
+    <string name="email_label">Email</string>
+    <string name="phone_label">Phone</string>
+    <string name="address_label">Address</string>
+    <string name="website_label">Website</string>
+    <string name="company_label">Company</string>
+    <string name="back">Back</string>
+
+</resources>

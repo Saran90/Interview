@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.employeedetail.EmployeeDetailActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.application.boilerplate.ui.employeedetail.EmployeeDetailViewModel" />
+
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetStart="0dp"
+        app:title=""
+        app:titleTextColor="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.application.boilerplate.ui.base.BaseTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_back_button_font"
+                android:onClick="@{()->viewModel.onBackClicked()}"
+                android:layout_marginLeft="10dp"/>
+
+            <com.application.boilerplate.ui.base.BaseTextView
+                android:id="@+id/tv_toolbar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/employee_detail_toolbar_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_title_font" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</layout>

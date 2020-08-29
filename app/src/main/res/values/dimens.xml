@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_title_font">18dp</dimen>
+    <dimen name="employee_list_item_height">80dp</dimen>
+    <dimen name="employee_list_item_profile_image_size">80dp</dimen>
+    <dimen name="employee_list_name_font">16dp</dimen>
+    <dimen name="employee_list_company_font">14dp</dimen>
+    <dimen name="employee_detail_profile_image_size">100dp</dimen>
+    <dimen name="employee_detail_name_font">18dp</dimen>
+    <dimen name="employee_detail_label_font">14dp</dimen>
+    <dimen name="employee_detail_value_font">16dp</dimen>
+    <dimen name="toolbar_back_button_font">15dp</dimen>
+</resources>

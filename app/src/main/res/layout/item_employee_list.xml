@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.application.boilerplate.ui.employeelist.EmployeeListItemViewModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/employee_list_item_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="10dp"
+        android:onClick="@{()->viewModel.onItemClick()}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/employee_list_item_profile_image_size"
+                android:layout_height="match_parent"
+                android:id="@+id/profileImageView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <com.application.boilerplate.ui.base.BaseTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.60"
+                    android:text="@{viewModel.name}"
+                    android:textColor="@color/employee_list_name_font_color"
+                    android:textSize="@dimen/employee_list_name_font"
+                    android:gravity="center_vertical"/>
+
+                <com.application.boilerplate.ui.base.BaseTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.40"
+                    android:text="@{viewModel.company}"
+                    android:textColor="@color/employee_list_company_font_color"
+                    android:textSize="@dimen/employee_list_company_font"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>
